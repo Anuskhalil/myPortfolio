@@ -32,9 +32,9 @@ window.onscroll = () => {
   header.classList.toggle('sticky', window.scrollY > 100);
 
 
-// Remove menu icon navbar when click navbar link (Scroll)
-menuIcon.classList.toggle('bx-x');
-navbar.classList.remove('active');
+  // Remove menu icon navbar when click navbar link (Scroll)
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.remove('active');
 };
 
 //Dark mode
@@ -47,17 +47,62 @@ darkModeIcon.onclick = () => {
 }
 
 //Scroll Reveal
-ScrollReveal({ 
+ScrollReveal({
   // reset: true,
   distance: '80px',
   duration: 2000,
-  delay: 200, 
+  delay: 200,
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
-ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left'});
-ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right'});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
+ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+
+var readMore = document.getElementById('readMore');
+var modal = document.getElementById('myModal');
+var closeBtn = document.getElementsByClassName('close')[0];
+
+readMore.addEventListener('click', function () {
+  // Display the modal
+  modal.style.display = 'block';
+});
+
+// Close the modal when the user clicks on the close button
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+}
+
+// Close the modal when the user clicks outside of it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Email
+// function sendEmail() {
+//   Email.send({
+//     Host: "smtp.gmail.com",
+//     Username: "anuskhalil77@gmail.com",
+//     Password: "mernstack@006",
+//     To: 'anuskhalil77@gmail.com',
+//     From: "sender@email_address.com",
+//     Subject: "Sending Email using javascript",
+//     Body: "Well that was easy!!",
+//     Attachments: [
+//       {
+//         name: "File_Name_with_Extension",
+//         path: "Full Path of the file"
+//       }]
+//   })
+//     .then(function (message) {
+//       alert("mail sent successfully", message)
+//     });
+// }
+
+
 
 
 
@@ -74,17 +119,17 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 
 
 //Swipper Code
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 50,
-  loop: true,
-  grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 50,
+//   loop: true,
+//   grabCursor: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });

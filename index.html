@@ -12,6 +12,7 @@
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Anus Khalil Portfolio</title>
+    <link rel="shortcut icon" href="./myImage.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,7 +42,10 @@
         <div class="home-content">
             <h3>Hello, I am</h3>
             <h1>Anus Khalil</h1>
-            <p>I am here to Build & Design Creative Web Pages and Applications for you.</p>
+            <p>I specialize in crafting innovative web pages and web applications that captivate and engage your
+                audience. With expertise in AI Chatbots, I create dynamic solutions including social handling bots and
+                web bots to enhance user interaction and experience. Let's collaborate to bring your digital vision to
+                life!</p>
             <p>Feel Free to connect on Social Media and you can directly approach as well.</p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -51,33 +55,38 @@
                 <!-- <a href="www.facebook.com">Facebook</a> -->
             </div>
 
-            <a href="#" class="btn">Download CV</a>
+            <a class="btn line-btn-dark btn-icon btn-radius" href="./Final for ibex interview resume.png" title=""
+                download>Download CV</a>
         </div>
 
         <div class="profession-container">
             <div class="profession-box">
-                <div class="profession" style="--i:0;">
+                <!-- <div class="profession" style="--i:0;">
                     <i class='bx bx-code-alt'></i>
                     <h3>Frontend Developer</h3>
+                </div> -->
+                <div class="profession" style="--i:4;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Founder @Fewture-ai</h3>
                 </div>
                 <div class="profession" style="--i:1;">
-                    <i class='bx bx-palette'></i>
-                    <h3>MERN Stack Development</h3>
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
                 </div>
                 <div class="profession" style="--i:2;">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Backend Development</h3>
+                    <h3>Chatbot Developer</h3>
                 </div>
                 <div class="profession" style="--i:3;">
                     <i class='bx bx-code-alt'></i>
-                    <h3>AI Chatbot Development</h3>
+                    <h3>OS Contributor</h3>
                 </div>
                 <div class="circle"></div>
             </div>
             <div class="overlay"></div>
         </div>
         <div class="home-img">
-            <img src="./image-removebg-preview.png" alt="My image">
+            <img src="./myImage.png" alt="My image">
         </div>
     </section>
 
@@ -85,13 +94,18 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="./Image-02.png" alt="My image">
+            <!-- <img src="./myImage3.png" alt="My image"> -->
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Hi, I'm here to help your next project!</h3>
-            <p>Hi! I’m Anus Khalil, and I’m a developer who has passion for building clean web pages and applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
+            <p>Hey there! I'm Anus Khalil, a passionate developer specializing in crafting sleek web pages and
+                applications with intuitive functionality. I thrive on turning ideas into reality through creative
+                solutions. With experience in solo full-stack projects and collaboration within creative teams, I bring
+                a versatile skill set to the table. Additionally, I possess expertise in AI Chatbot development,
+                enhancing user engagement and experience. Let's bring your digital vision to life! If anyone want to
+                know more about me then Schedule a meeting with me.
             </p>
             <a href="#" class="btn">Read More</a>
         </div>
@@ -105,22 +119,39 @@
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Web development is the process of creating websites. It involves the coding, designing, and maintenance of websites. Web developers use a variety of programming languages and tools to create websites that are both functional and visually appealing.</p>
+                <h3>Open Source Contributor</h3>
+                <p>Open Source Contribution is my passion to contribute in real world projects and work with
+                    professional developers around the world. I have been part of amazing Open Source contributing
+                    communities in which we are having GSSoC, SSoC, and MLSA-WGMIT</p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>MERN Stack Development</h3>
-                <p>The MERN stack is known for its speed, scalability, and flexibility. It is a good choice for developing web applications that require high performance and scalability. The MERN stack is also a good choice for developing web applications.</p>
+                <p>The MERN stack is known for its speed, scalability, and flexibility. It is a good choice for
+                    developing web applications that require high performance and scalability. The MERN stack is also a
+                    good choice for developing web applications.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>AI Chatbot Development</h3>
-                <p>An AI chatbot is a piece of software that interacts with a human through written language. It is often embedded in web pages or other digital applications to answer customer inquiries without the need for human agents, thus providing affordable effortless customer service.
+                <p>An AI chatbot is a piece of software that interacts with a human through written language. It is
+                    often embedded in web pages or other digital applications to answer customer inquiries without the
+                    need for human agents, thus providing affordable effortless customer service.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <button class="btn" id="readMore">Read More</button>
+                <!-- The modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Welcome👋</h1>
+                        <p>To know more about my AI Chatbot Services and Projects.</p>
+                        <p>Follow me on LinkedIn OR have an 1v1 Consultation meeting. Consultation for AI Chatbot
+                            Service has pinned on Website.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -129,24 +160,23 @@
     <!-- portfolio section design -->
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-
+        <h2 class="heading">All my Web <span>Projects</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="./137022918-178a5a8f-f34f-49c2-80b2-b88807a58c05.png" alt="">
+                <img src="./Insta clone.png" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quaerat aspernatur.</p>
+                    <h4>Web Project</h4>
+                    <p>It is my Instagram Clone project that was given by DevTown 2022.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./a-world.jpg" alt="">
+                <img src="./a-world (1).jpg" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quaerat aspernatur.</p>
+                    <h4>Web Project</h4>
+                    <p>It is my practice project built by me in 2022.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -154,8 +184,9 @@
                 <img src="./dentcare-1.png" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quaerat aspernatur.</p>
+                    <h4>Web project</h4>
+                    <p>It is my Practice Project that I developed when I was doing an Internship at Code Solution in
+                        2023.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -163,8 +194,8 @@
                 <img src="./download (1).jpg" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quaerat aspernatur.</p>
+                    <h4>Web Project</h4>
+                    <p>It is my practice project built by me in 2023.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -172,8 +203,8 @@
                 <img src="./download (2).jpg" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quaerat aspernatur.</p>
+                    <h4>Web Project</h4>
+                    <p>Facebook clone project given by DevTown 2023.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -181,8 +212,8 @@
                 <img src="./madang_preview.webp" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quaerat aspernatur.</p>
+                    <h4>Web Project</h4>
+                    <p>It is my practice project built by me in 2023.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -192,7 +223,7 @@
 
     <!-- testimonial design -->
 
-    <div class="testimonial-container">
+    <!-- <div class="testimonial-container">
         <h2 class="heading">Valuable <span>Testimonial</span></h2>
 
         <div class="testimonial-wrapper ">
@@ -228,27 +259,28 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- contact section design -->
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-        </div>
+        <form action="https://formsubmit.co/anuskhalil77@gmail.com" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
 
-        <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
-        </div>
-        
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Mobile Number" required>
+                <input type="text" name="emailSubject" placeholder="Email Subject" required>
+            </div>
+
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <!-- <input type="submit" value="Send Message" class="btn"> -->
+            <input type="submit" value="Send Email" class="btn" />
+        </form>
     </section>
 
     <!-- footer design -->
@@ -256,6 +288,9 @@
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2023 by Anus Khalil | All right Reserved</p>
+            <a href="#" style="font-size: 15px; position: relative; top: 8px;"><i class='bx bxl-gmail'></i>
+                anuskhalil77@gmail.com</a>
+            <h2 class="phoneNo" style="font-size: 15px; position: relative; top: 8px;">0321-2173134</h2>
         </div>
 
         <div class="footer-iconTop">
@@ -264,11 +299,12 @@
     </footer>
 
 
-<!-- Scroll reveal -->
-<script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-
-
+    <!-- For Email Send -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">
+    </script> -->
 
 
     <!-- Swipper JS -->
@@ -277,6 +313,40 @@
 
     <!-- JavaScript Connector -->
     <script src="./app.js"></script>
+
+    <!-- Chatbot -->
+    <!-- <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '6632a89c04113b2334087091' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script> -->
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script
+        type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/anuskhalil77/1v1-chatbot-consultation', text: '1v1 Chatbot Consultation ', color: '#754EF9', textColor: '#ffffff', branding: undefined }); }</script>
+    <!-- Calendly badge widget end -->
+
+    <!-- Flowise App -->
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "efdf91f5-def7-4658-928c-4fc74236f33e",
+            apiHost: "http://localhost:3000",
+        })
+    </script>
+    
+
+
 
 </body>
 
