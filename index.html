@@ -332,22 +332,29 @@
     <!-- Calendly badge widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script
-        type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/anuskhalil77/1v1-chatbot-consultation', text: '1v1 Chatbot Consultation ', color: '#754EF9', textColor: '#ffffff', branding: undefined }); }</script>
+    <script type="text/javascript">window.onload = function () {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/anuskhalil77/1v1-chatbot-consultation',
+                text: '1v1 Chatbot Consultation',
+                color: '#754EF9',
+                textColor: '#ffffff',
+                branding: undefined,
+            })
+        }
+    </script>
     <!-- Calendly badge widget end -->
 
-    <!-- Flowise App -->
-    <script type="module">
+    <!-- Flowise App  -->
+    <!-- <script type="module">
         import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
         Chatbot.init({
             chatflowid: "efdf91f5-def7-4658-928c-4fc74236f33e",
             apiHost: "http://localhost:3000",
         })
-    </script>
-    
-
-
-
+    </script> -->
+    <iframe src="https://app.vectorshift.ai/chatbots/embedded/663ff1f79dc9fed219abdfd2?openChatbot=true" width="500px"
+        height="600px" style="border: none; position: fixed; bottom: 0; right: 0; margin: 10px;"
+        allow="clipboard-read; clipboard-write" />
 </body>
 
 </html>
